@@ -1,0 +1,11 @@
+spring:
+  rabbitmq:
+    username: guest
+    password: guest
+    host: localhost
+    port: 5672
+    listener:
+      simple:
+        acknowledge-mode: manual        #表示设置ack为手动确认
+      direct:
+        acknowledge-mode: manual        #表示设置ack为手动应答
